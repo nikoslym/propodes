@@ -190,7 +190,7 @@ a:hover {
 }
 
 .slideshow {
-  margin: 0;
+  margin: 0 0 clamp(4rem, 9vw, 7rem);
   padding: 0 var(--pad);
 }
 
