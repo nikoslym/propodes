@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "site": "Propodes",
+    "description": "Organic extra virgin olive oil from the foothills of Mount Taygetus. Goranoi and Kokkina Louria, Lakonia.",
+    "homeTitle": "Propodes",
+    "aboutTitle": "Who we are — Propodes",
+    "oilTitle": "The olive oil — Propodes",
+    "contactTitle": "Contact — Propodes",
+    "privacyTitle": "Privacy — Propodes"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Who we are",
+    "oil": "The olive oil",
+    "contact": "Contact",
+    "order": "Order",
+    "privacy": "Privacy"
+  },
+  "home": {
+    "hero": "Organic extra virgin olive oil from the foothills of Mount Taygetus",
+    "oilsLink": "Our olive oils",
+    "orderLink": "Order",
+    "word": "Propodes",
+    "definition": "The lower slopes at the base of a mountain, where the mountain meets the land below.",
+    "taygetus": "Our centuries-old olive trees lie at the foothills of Mount Taygetus. The mountainous altitude and distinctive microclimate give our olive oil a unique aromatic and flavor profile.",
+    "aboutLink": "Who we are",
+    "orderTitle": "Order directly from the producers",
+    "write": "Write to us"
+  },
+  "about": {
+    "title": "Who we are",
+    "intro": "We are two olive farmers from Lakonia. We farm our centuries-old olive groves organically, at the foothills of Mount Taygetus.",
+    "giorgos": "Giorgos Kalkanis",
+    "giorgosPlace": "Goranoi",
+    "filippos": "Filippos Chrisadakos",
+    "filipposPlace": "Kokkina Louria",
+    "groves": "The groves are in Goranoi and Kokkina Louria, at the foot of Taygetus.",
+    "why": "Propodes is the lowest part of a mountain, where the slope meets the land. The oil takes its name from there.",
+    "houseAlt": "A stone house in the olive grove",
+    "trunkAlt": "The trunk of a centuries-old olive tree"
+  },
+  "oilPage": {
+    "title": "The olive oil",
+    "intro": "Superior category olive oil obtained directly from olives and solely by mechanical means.",
+    "harvestAlt": "Freshly picked olives on harvest nets",
+    "harvestCaption": "The harvest, on the nets.",
+    "fruitAlt": "Green and dark olives together",
+    "fruitCaption": "Green and dark olives from the same picking.",
+    "netsAlt": "Harvest nets spread through the grove",
+    "netsCaption": "Nets spread under the trees.",
+    "legal": "Organic extra virgin olive oil. Ingredients: organic extra virgin olive oil.",
+    "storage": "Keep in a dry, cool and dark place.",
+    "packed": "Produced and packed in Greece on behalf of the producers G. Kalkanis and F. Chrisadakos, Goranoi – Kokkina Louria, Laconia, 230 54."
+  },
+  "oils": {
+    "line": "Organic extra virgin olive oil, 500 ml",
+    "order": "Order",
+    "nutrition": "Nutrition",
+    "per": "per 100 ml",
+    "energy": "Energy",
+    "fat": "Fat",
+    "saturates": "saturates",
+    "mono": "monounsaturates",
+    "poly": "polyunsaturates",
+    "carbs": "Carbohydrates",
+    "sugars": "sugars",
+    "protein": "Protein",
+    "salt": "Salt",
+    "zero": "0 g",
+    "reference": "Reference intake of an average adult: 8400 kJ / 2000 kcal.",
+    "athinolia": {
+      "name": "Athinolia",
+      "note": "A single variety, Lakonia's Athinolia",
+      "alt": "An olive branch with green and dark fruit"
+    },
+    "blend": {
+      "name": "Athinolia and Koroneiki",
+      "note": "Two varieties",
+      "alt": "A mature olive tree in the grove"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "To order or ask anything, call or send a message.",
+    "viber": "Viber",
+    "whatsapp": "WhatsApp",
+    "addressTitle": "Address",
+    "address": "Goranoi – Kokkina Louria, Lakonia, 230 54, Greece",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "products": "Product",
+    "questionOnly": "Question only",
+    "quantity": "Quantity (bottles)",
+    "area": "Delivery area",
+    "areaHint": "Greece or abroad",
+    "message": "Message",
+    "consent": "I agree that these details may be used to reply to my order or question.",
+    "privacy": "Privacy",
+    "send": "Send",
+    "thanks": "Thank you. We will be in touch soon.",
+    "unconfigured": "The form cannot send email yet. Please call, or write to info@propodes.com.",
+    "invalid": "Add your name, a phone or email, and your consent.",
+    "failed": "The message was not sent. Please call."
+  },
+  "privacy": {
+    "title": "Privacy",
+    "p1": "The contact form asks for a name, a phone or email, and optionally a product, quantity, delivery area and message. We send these to the producers so they can reply to an order or a question.",
+    "p2": "We do not sell these details or use them for advertising. The site does not set analytics cookies.",
+    "p3": "To correct or delete what you sent, write to info@propodes.com or call the numbers on the label."
+  },
+  "footer": {
+    "rights": "© Propodes"
+  },
+  "notFound": {
+    "title": "Not found",
+    "back": "Home"
+  }
+}
