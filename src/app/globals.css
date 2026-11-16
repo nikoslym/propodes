@@ -1,0 +1,450 @@
+:root {
+  --ink: #1a2121;
+  --slate: #4c5d63;
+  --olive: #7a8a55;
+  --paper: #ffffff;
+  --pad: clamp(1.25rem, 5vw, 5.5rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.08;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: 0.22em;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 3px;
+}
+
+.skip {
+  position: absolute;
+  left: var(--pad);
+  top: 0.5rem;
+  transform: translateY(-150%);
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.4rem 0.6rem;
+}
+
+.skip:focus {
+  transform: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  padding: 1.1rem var(--pad);
+  background: var(--paper);
+  flex-wrap: wrap;
+}
+
+.brand img {
+  display: block;
+  height: 46px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
+}
+
+.header-tools {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+}
+
+.header-tools a {
+  text-decoration: none;
+}
+
+.header-tools a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.9fr) 1.2fr;
+  min-height: calc(100svh - 4.6rem);
+  background: var(--slate);
+  color: var(--paper);
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 2rem;
+  padding: var(--pad);
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4.6vw, 4.4rem);
+  max-width: 12em;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+}
+
+.hero-links a {
+  color: var(--paper);
+}
+
+.hero-photo {
+  min-height: 52vh;
+}
+
+.hero-photo img,
+.oil img,
+.photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.define {
+  background: var(--slate);
+  color: var(--paper);
+  padding: clamp(4.5rem, 12vw, 8rem) var(--pad);
+}
+
+.define h2 {
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  margin-bottom: 1.25rem;
+}
+
+.define p {
+  max-width: 28em;
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 300;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+}
+
+.story-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1.75rem;
+  padding: var(--pad);
+}
+
+.story-copy p,
+.prose p,
+.oil-copy p,
+.caption {
+  max-width: 34em;
+}
+
+.story-copy a,
+.oil-copy a,
+.text-links a {
+  margin-right: 1.5rem;
+}
+
+.oil {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 78vh;
+  background: var(--paper);
+}
+
+.oil-flip img {
+  order: 2;
+}
+
+.oil-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: var(--pad);
+}
+
+.oil-copy h2 {
+  font-size: clamp(2.6rem, 5vw, 4.5rem);
+}
+
+.order {
+  background: var(--olive);
+  color: var(--paper);
+  padding: clamp(4.5rem, 10vw, 7rem) var(--pad);
+}
+
+.order h2 {
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  max-width: 12em;
+  margin-bottom: 2rem;
+}
+
+.order a {
+  color: var(--paper);
+  font-size: clamp(1.5rem, 2.4vw, 2rem);
+  font-weight: 300;
+}
+
+.phone-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.phone-line-quiet {
+  font-size: 1.35rem;
+}
+
+.page {
+  padding: clamp(3rem, 8vw, 6rem) var(--pad) clamp(4rem, 10vw, 7rem);
+}
+
+.page h1 {
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  margin-bottom: 1.5rem;
+}
+
+.prose {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 40rem;
+}
+
+.names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 3rem;
+  margin-top: 3rem;
+  max-width: 46rem;
+}
+
+.names p:first-child {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+.photo {
+  min-height: 70vh;
+}
+
+.caption {
+  padding: 1rem var(--pad) 0;
+}
+
+.stack {
+  display: grid;
+}
+
+.nutrition {
+  margin-top: 0.5rem;
+}
+
+.nutrition summary {
+  cursor: pointer;
+  width: fit-content;
+}
+
+.nutrition table {
+  border-collapse: collapse;
+  margin-top: 1.25rem;
+  width: min(100%, 26rem);
+}
+
+.nutrition td {
+  padding: 0.35rem 1rem 0.35rem 0;
+  vertical-align: baseline;
+}
+
+.nutrition td:last-child {
+  text-align: right;
+}
+
+.nutrition .note {
+  margin-top: 1rem;
+  max-width: 32em;
+}
+
+.contact-phones {
+  margin-top: 2rem;
+}
+
+.form {
+  margin-top: 2.5rem;
+  max-width: 36rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.form label {
+  margin-top: 1.4rem;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  border-radius: 0;
+  padding: 0.45rem 0;
+}
+
+.form textarea {
+  min-height: 7rem;
+  resize: vertical;
+}
+
+.checks {
+  display: grid;
+  gap: 0.45rem;
+  margin-top: 0.6rem;
+}
+
+.checks label,
+.consent {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.checks input,
+.consent input {
+  width: auto;
+  margin-top: 0.35rem;
+  accent-color: var(--ink);
+}
+
+.form button {
+  justify-self: start;
+  margin-top: 1.75rem;
+  font: inherit;
+  font-size: 1.125rem;
+  color: var(--paper);
+  background: var(--slate);
+  border: 0;
+  border-radius: 0;
+  padding: 0.85rem 1.3rem;
+  cursor: pointer;
+}
+
+.form .status {
+  margin-top: 1.25rem;
+}
+
+.address {
+  margin-top: 3.5rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.footer {
+  background: var(--slate);
+  color: var(--paper);
+  padding: 3rem var(--pad) 2.5rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.footer img {
+  height: 148px;
+  width: auto;
+}
+
+.footer a {
+  color: var(--paper);
+  margin-right: 1.25rem;
+}
+
+.footer p {
+  max-width: 36em;
+}
+
+@media (max-width: 860px) {
+  .hero,
+  .story,
+  .oil,
+  .names {
+    grid-template-columns: 1fr;
+  }
+
+  .oil-flip img {
+    order: 0;
+  }
+
+  .hero-photo,
+  .photo {
+    min-height: 62vw;
+  }
+
+  .oil {
+    min-height: 0;
+  }
+
+  .oil img {
+    height: 70vw;
+  }
+}
