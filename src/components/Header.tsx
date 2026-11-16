@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 
@@ -16,29 +17,59 @@ export function Header() {
   const locale = useLocale();
   const other = locale === "el" ? "en" : "el";
   const otherLabel = locale === "el" ? "English" : "Ελληνικά";
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname, locale]);
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
 
   return (
     <header className="header">
       <Link href="/" className="brand" aria-label={locale === "el" ? "Πρόποδες" : "Propodes"}>
         <img src="/brand/logo-horizontal.svg" alt="" />
       </Link>
-      <nav className="nav" aria-label={locale === "el" ? "Κύρια" : "Main"}>
+      <button
+        type="button"
+        className="menu-toggle"
+        aria-expanded={open}
+        aria-controls="site-menu"
+        onClick={() => setOpen((value) => !value)}
+      >
+        <span className="menu-bars" aria-hidden="true" />
+        <span className="visually-hidden">{open ? t("close") : t("menu")}</span>
+      </button>
+      <div className="header-tools">
+        <Link href={pathname} locale={other}>
+          {otherLabel}
+        </Link>
+        <Link href="/contact" className="order-link">
+          {t("order")}
+        </Link>
+      </div>
+      <nav id="site-menu" className={open ? "nav is-open" : "nav"} aria-label={locale === "el" ? "Κύρια" : "Main"}>
         {links.map((item) => (
           <Link
             key={item.href}
             href={item.href}
             aria-current={pathname === item.href ? "page" : undefined}
+            onClick={() => setOpen(false)}
           >
             {t(item.key)}
           </Link>
         ))}
-      </nav>
-      <div className="header-tools">
-        <Link href={pathname} locale={other}>
-          {otherLabel}
+        <Link href="/contact" className="nav-order" onClick={() => setOpen(false)}>
+          {t("order")}
         </Link>
-        <Link href="/contact">{t("order")}</Link>
-      </div>
+      </nav>
     </header>
   );
 }
