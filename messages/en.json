@@ -20,7 +20,10 @@
     "hero": "Organic extra virgin olive oil from the foothills of Mount Taygetus",
     "oilsLink": "Our olive oils",
     "orderLink": "Order",
-    "word": "Propodes",
+    "word": "propodes",
+    "pos": "noun",
+    "syllables": "pro·po·des",
+    "ipa": "/ˈpro.po.ðes/",
     "definition": "The lower slopes at the base of a mountain, where the mountain meets the land below.",
     "taygetus": "Our centuries-old olive trees lie at the foothills of Mount Taygetus. The mountainous altitude and distinctive microclimate give our olive oil a unique aromatic and flavor profile.",
     "aboutLink": "Who we are",
@@ -48,6 +51,8 @@
     "fruitCaption": "Green and dark olives from the same picking.",
     "netsAlt": "Harvest nets spread through the grove",
     "netsCaption": "Nets spread under the trees.",
+    "previous": "Previous",
+    "next": "Next",
     "legal": "Organic extra virgin olive oil. Ingredients: organic extra virgin olive oil.",
     "storage": "Keep in a dry, cool and dark place.",
     "packed": "Produced and packed in Greece on behalf of the producers G. Kalkanis and F. Chrisadakos, Goranoi – Kokkina Louria, Laconia, 230 54."
@@ -73,6 +78,11 @@
       "note": "A single variety, Lakonia's Athinolia",
       "alt": "An olive branch with green and dark fruit"
     },
+    "koroneiki": {
+      "name": "Koroneiki",
+      "note": "A single variety, Koroneiki",
+      "alt": "The trunk of a centuries-old olive tree in the grove"
+    },
     "blend": {
       "name": "Athinolia and Koroneiki",
       "note": "Two varieties",
@@ -82,6 +92,7 @@
   "contact": {
     "title": "Contact",
     "intro": "To order or ask anything, call or send a message.",
+    "photoAlt": "The trunk of a centuries-old olive tree",
     "viber": "Viber",
     "whatsapp": "WhatsApp",
     "addressTitle": "Address",

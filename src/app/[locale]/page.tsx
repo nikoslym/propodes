@@ -30,7 +30,14 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       <section className="define">
-        <h2>{t("word")}</h2>
+        <h2>
+          {t("word")} <span>({t("pos")})</span>
+        </h2>
+        <p className="entry-sound">
+          {t("syllables")}
+          <span aria-hidden="true"> · </span>
+          {t("ipa")}
+        </p>
         <p>{t("definition")}</p>
       </section>
 
@@ -47,7 +54,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       </section>
 
       <OilBlock id="athinolia" />
-      <OilBlock id="blend" flip />
+      <OilBlock id="koroneiki" flip />
+      <OilBlock id="blend" />
 
       <section className="order">
         <h2>{t("orderTitle")}</h2>

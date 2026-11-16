@@ -33,6 +33,18 @@ export const oils = [
     },
   },
   {
+    id: "koroneiki",
+    image: "/photos/ancient.jpg",
+    nutrition: {
+      kcal: "824",
+      kj: "3389",
+      fat: "91.6",
+      saturates: "12.8",
+      mono: "73.9",
+      poly: "4.9",
+    },
+  },
+  {
     id: "blend",
     image: "/photos/tree.jpg",
     nutrition: {

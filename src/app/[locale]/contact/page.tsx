@@ -21,22 +21,27 @@ export default async function ContactPage({
   const t = await getTranslations("contact");
 
   return (
-    <article className="page">
-      <h1>{t("title")}</h1>
-      <div className="prose">
-        <p>{t("intro")}</p>
-      </div>
-      <div className="contact-phones">
-        <Phones />
-      </div>
-      <ContactForm selected={product} />
-      <div className="address">
-        <p>{t("addressTitle")}</p>
-        <p>{t("address")}</p>
-        <p>
-          <a href="mailto:info@propodes.com">info@propodes.com</a>
-        </p>
-      </div>
-    </article>
+    <div className="contact-split">
+      <article className="page">
+        <h1>{t("title")}</h1>
+        <div className="prose">
+          <p>{t("intro")}</p>
+        </div>
+        <div className="contact-phones">
+          <Phones />
+        </div>
+        <ContactForm selected={product} />
+        <div className="address">
+          <p>{t("addressTitle")}</p>
+          <p>{t("address")}</p>
+          <p>
+            <a href="mailto:info@propodes.com">info@propodes.com</a>
+          </p>
+        </div>
+      </article>
+      <figure className="contact-photo">
+        <img src="/photos/trunk.jpg" alt={t("photoAlt")} />
+      </figure>
+    </div>
   );
 }

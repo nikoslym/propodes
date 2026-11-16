@@ -1,5 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { OilBlock } from "@/components/OilBlock";
+import { Slideshow } from "@/components/Slideshow";
 import { pageMeta } from "@/lib/page-meta";
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -21,21 +22,19 @@ export default async function OliveOilPage({ params }: { params: Promise<{ local
         </div>
       </article>
 
-      <figure>
-        <img src="/photos/harvest.jpg" alt={t("harvestAlt")} />
-        <figcaption className="caption">{t("harvestCaption")}</figcaption>
-      </figure>
-      <figure>
-        <img src="/photos/fruit.jpg" alt={t("fruitAlt")} />
-        <figcaption className="caption">{t("fruitCaption")}</figcaption>
-      </figure>
-      <figure>
-        <img src="/photos/nets.jpg" alt={t("netsAlt")} />
-        <figcaption className="caption">{t("netsCaption")}</figcaption>
-      </figure>
+      <Slideshow
+        previousLabel={t("previous")}
+        nextLabel={t("next")}
+        slides={[
+          { src: "/photos/harvest.jpg", alt: t("harvestAlt"), caption: t("harvestCaption") },
+          { src: "/photos/fruit.jpg", alt: t("fruitAlt"), caption: t("fruitCaption") },
+          { src: "/photos/nets.jpg", alt: t("netsAlt"), caption: t("netsCaption") },
+        ]}
+      />
 
       <OilBlock id="athinolia" withNutrition />
-      <OilBlock id="blend" flip withNutrition />
+      <OilBlock id="koroneiki" flip withNutrition />
+      <OilBlock id="blend" withNutrition />
 
       <article className="page">
         <div className="prose">
